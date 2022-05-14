@@ -17,6 +17,6 @@ Route::get('/', function () {
 
 Route::get('loginPage', "ViewController@showLogin");
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
